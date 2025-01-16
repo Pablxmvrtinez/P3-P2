@@ -14,7 +14,7 @@ despues iremos a lo importante que es hacer _sudo nano ejemplo3.ldif_ dentro pon
 
 ![ALT](IMG/undecima.png) 
 
-este comando creara el archivo y ademas introduciremos los datos del objeto es decir pondremos:
+Este comando creara el archivo y ademas introduciremos los datos del objeto es decir pondremos:
 
 dc: Dominio al que corresponde. 
 
