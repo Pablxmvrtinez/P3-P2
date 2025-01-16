@@ -13,7 +13,9 @@ Luego el siguiente comando que escribiremos sera el _Systemctl status ldap_ esto
 
 Despues de realizar esos dos comandos usaremos el _sudo slapcat_ para ver el directorio y los datos que hay este paso no es obligatorio pero si recomendado
 despues iremos a lo importante que es hacer _sudo nano ejemplo3.ldif_ dentro pondremos los siguientes comandos:
+
 ![ALT](img/undecima.png) 
+
 este comando creara el archivo y ademas introduciremos los datos del objeto es decir pondremos:
 dc: Dominio al que corresponde. 
 uid: Identificador único del objeto dentro del directorio. 
@@ -24,9 +26,13 @@ userPassword: Contraseña asignada.
 lo pondremos todo guiandonos de las definiciones que puse tal y como puse en la foto
 
 Tras esto usaremos el comando _sudo ldapadd -x -D cn=admin,dc=medac -w -f ejemplo3.ldif_ te pedira la contraseña en este caso salia un error desconocido el cual pone _invalid credentials_ a si que en vez de ese comando pondremos el _sudo dpkg-reconfigure slapd_
+
  ![ALT](img/SEXTA%20FOTO.png) 
+
  ![ALT](img/SEPTIMA%20FOTO%20.png)
+
  ![ALT](img/NOVENA%20FOTO.png)
+
  ![ALT](img/decima%20foto.png)
 
  Con eso basicamente podremos ponerle y crear nombre al dominio y a la organizacion.
@@ -38,6 +44,7 @@ con esos comandos primero accedermos al directorio y despues podremos ver:
 named.conf.local: Sirve para realizar la configuración local utilizando dominios/servidores locales. 
 named.conf.options: Sirve para realizar la configuración e incluir servidores DNS públicos para las consultas que se realizan en Internet. 
 named.default-zones: Sirve para configurar las zonas primarias e inversas.
+
 ![ALT](img/doceava%20foto.png)
 
 ## DHCP
@@ -52,6 +59,7 @@ optionmascara_subred: Para indicar la dirección de la máscara de subred. • o
 option_routers: Para indicar la dirección de la puerta de enlace. 
 
 ![ALT](img/Treceava%20foto.png)
+
 ![ALT](img/14%20foto.png)
 
 Tambien tendremos que hacer del punto 9 el caso practico 2 la instalacion de servicio DHCP en el cual deberemos de cambiar ademas el tiempo de ip en 5 segundos de minimo y en el maximo "X" segundos siendo X el numero de el grupo es decir en mi caso 14 segundos. A continuacion dejare capturas de los pasos realizados:
@@ -74,4 +82,5 @@ Despues de instalarlo lo configuraremos para que se ejecute cuando se inicie el 
 Despues crearemos un nuevo usuario y ademas le asignaremos una contraseña tambien usaremos un comando para acceder a la IP FTP en nuestro caso sera la nuestra local y si quieres utilizarlo podemos usar el filezilla adjunto las imagenes
 
 ![ALT](img/Captura.PNG)
+
 ![ALT](img/18%20FOTO.png)
